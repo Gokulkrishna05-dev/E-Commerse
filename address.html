@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <!-- Nav Bar -->
+    <!-- Mobile Nav -->
+     <div class="Nav-bar">
+     <div class="mob-nav" id="mob-nav">
+    <button class="cancel-btn" id="cancel-btn">Cancel</button>
+     <nav class="mob-content">
+     <a href="#">Home</a>
+     <a href="#">Shop</a>
+     <a href="#">About</a>
+     <a href="#">Contact</a>
+     </nav>
+     </div>
+      <!-- Mobile Nav -->
+     <div class="nav-bar">
+      <div class="nav-logo">
+       <img src="Images/logo.png" alt="">
+      </div>
+      <nav class="nav-content">
+       <a href="index.html">Home
+        <div class="line"></div>
+       </a>
+       <a href="shop.html">Shop
+       <div class="line"></div>
+       </a>
+       <a href="#">About
+         <div class="line"></div>
+       </a>
+       <a href="#">Contact
+         <div class="line"></div>
+       </a>
+       <span class="cart-btn">Cart <span class="counter">0</span></span>
+    </nav>
+      <div class="menu-div">
+         <span class="cart-btn">Cart <span class="counter">0</span></span>
+         <span class="menu-btn" id="menu-btn">Menu</span>
+      </div>
+     </div>
+     </div>
+    <!-- Nav Bar -->
+
+<!-- Shipping -->
+  <section class="ship-adress">
+  <h1>Add Shipping <span>Address</span></h1>
+  <div class="add-div">
+  <div class="name div">
+    <input type="text" placeholder="Full name" id="name">
+    <p class="NAME error">Enter your name</p>
+  </div>
+  <div class="num div">
+    <input type="number" placeholder="Phone number" id="num">
+    <p class="NUMBER error">Enter your number</p>
+  </div>
+  <div class="pin div">
+    <input type="number" placeholder="Pincode" id="pincode">
+    <p class="PINCODE error">Enter pincode</p>
+  </div> 
+  <div class="add div">
+    <input type="text" placeholder="Address(Door No/Area/Street)" id="add">
+    <p class="ADDRESS error">Enter address</p>
+  </div>
+  <div class="city div">
+    <div>
+    <input type="text" placeholder="City/District/Town" id="city">
+    <p class="CITY error">Enter city name</p>
+    </div>
+    <div>
+    <input type="text" placeholder="State" id="state">
+    <p class="STATE error">Enter state name</p>
+    </div>
+  </div>
+  <div class="div-btn">
+    <button onclick="save()">Save Address</button>
+  </div>
+  </div>
+  </section>
+  <!-- Shipping -->
+  <script src="addScript.js"></script>
+</body>
+</html>

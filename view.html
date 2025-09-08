@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body{
+
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .product-view{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 80px;
+        min-height: 80vh;
+      }
+      .view{
+        display: flex;
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        column-gap: 40px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
+      }
+      .view-img{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        min-width: 30%;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5px;
+      }
+      .main-img-cont{
+         height: 70%;
+         width: 100%;
+      }
+      @media screen and (max-width:350px){
+        .product-view{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 80px;
+        min-height: 80vh;
+      }
+      }
+      .sub-image{
+        display: flex;
+        height: 30%;
+        width: 100%;
+        column-gap: 7px;
+      }
+      .sub-image img{
+        cursor: pointer;
+      }
+      .view-text{
+        width: 50%; 
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+        min-height: 50%;
+        flex: 1;
+        min-width: 40%;
+        /* padding-top: 80px; */
+      }
+      .view-text p,h1{
+        max-width: 80%;
+      }
+    @media screen and (max-width:550px){
+        .view{
+            align-items: start;
+            flex-wrap: wrap;
+            row-gap: 50px;
+        }
+        .view-text p{
+            max-width: 100% ;
+        }
+    }
+    select{
+        max-width: 105px;
+        padding: 4px;
+    }
+    input{
+        max-width: 60px;
+        padding: 4px;
+    }
+    button{
+        padding: 4px;
+    }
+    .back{
+        max-width: 200px;
+        padding: 8px;
+    }
+    .add-btn{
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+}
+    </style>
+</head>
+<body>
+     <!-- Nav Bar -->
+    <!-- Mobile Nav -->
+    <div class="Nav-bar">
+        <div class="mob-nav" id="mob-nav">
+            <button class="cancel-btn" id="cancel-btn">Cancel</button>
+            <nav class="mob-content">
+                <a href="index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Cart</a>
+            </nav>
+        </div>
+        <!-- Mobile Nav -->
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="Images/logo.png" alt="">
+            </div>
+            <nav class="nav-content">
+                <a href="index.html">Home
+                    <div class="line"></div>
+                </a>
+                <a href="shop.html">Shop
+                    <div class="line"></div>
+                </a>
+                <a href="#">About
+                    <div class="line"></div>
+                </a>
+                <a href="#">Contact
+                    <div class="line"></div>
+                </a>
+                <a href="cart.html">Cart <span class="counter">0</span></a>
+            </nav>
+            <div class="menu-div">
+                <a id="btn" href="cart.html">Cart   <span class="counter">0</span></a>
+                <span class="menu-btn" id="menu-btn">Menu</span>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar -->
+    
+        <!-- Products View -->
+    <section class="product-view">
+    <div class="view">
+     <div class="view-img">
+     <div class="main-img-cont">
+      <img src="Fp images/Shirt-1 (1).jpg" alt="">
+     </div>
+     <div class="sub-image">
+        <div class="sub-img-cont">
+            <img id="sb1">
+        </div>
+        <div class="sub-img-cont">
+          <img id="sb2">
+        </div>
+        <div class="sub-img-cont">
+          <img  id="sb3">
+        </div>
+        <div class="sub-img-cont">
+          <img id="sb4">
+        </div>
+     </div>
+     </div>
+
+     <div class="view-text">
+      <h1 id="name"></h1>
+      <p id="brand"></p>
+      <b id="price">&#8377</b>
+      <select required id="select_size">
+      <option value="" disabled selected>Select size</option>
+      <option value="1">S</option>
+      <option value="2">M</option>
+      <option value="3">L</option>
+      <option value="4">XL</option>
+      <option value="5">XXL</option>
+      <option value="6">XXL</option>
+      </select>
+      <div class="cart-bt">
+      <input type="text" id="input">
+      <button id="add">Add to Cart</button>
+      </div>
+      <h3>Product Details</h3>
+      <p id="des"></p>
+      <button onclick="back()" class="back">Back to shopping</button>
+     </div>
+    </div>
+    </section>
+    <!-- Products View -->
+     
+    <script src="script.js"></script>
+    <script src="viewScript.js" defer></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

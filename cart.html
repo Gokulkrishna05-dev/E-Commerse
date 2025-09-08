@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerse</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body{
+        min-height: 100dvh;
+      }
+    </style>
+</head>
+<body>
+        <!-- Nav Bar -->
+    <!-- Mobile Nav -->
+     <div class="Nav-bar">
+     <div class="mob-nav" id="mob-nav">
+    <button class="cancel-btn" id="cancel-btn">Cancel</button>
+     <nav class="mob-content">
+     <a href="#">Home</a>
+     <a href="#">Shop</a>
+     <a href="#">About</a>
+     <a href="#">Contact</a>
+     </nav>
+     </div>
+      <!-- Mobile Nav -->
+     <div class="nav-bar">
+      <div class="nav-logo">
+       <img src="Images/logo.png" alt="">
+      </div>
+      <nav class="nav-content">
+       <a href="index.html">Home
+        <div class="line"></div>
+       </a>
+       <a href="shop.html">Shop
+       <div class="line"></div>
+       </a>
+       <a href="#">About
+         <div class="line"></div>
+       </a>
+       <a href="#">Contact
+         <div class="line"></div>
+       </a>
+       <span class="cart-btn">Cart <span class="counter">0</span></span>
+    </nav>
+      <div class="menu-div">
+         <span class="cart-btn">Cart <span class="counter">0</span></span>
+         <span class="menu-btn" id="menu-btn">Menu</span>
+      </div>
+     </div>
+     </div>
+    <!-- Nav Bar -->
+
+    <!-- Cart Section -->
+     <section class="cart-section">
+        <h1 class="title">Cart</h1>
+     <div class="cart" id="ct">
+     </div>
+     
+     <!-- Total -->
+     <div class="total-table">
+      <h1>Order Summary</h1>
+      <div class="address">
+      <p>Select Address</p>
+       <select name="" id="select">
+        <option value="" selected disabled>Select Adress</option>
+        <option value="1" id="opt"><button onclick="address">Add Address</button></option> 
+       </select>
+      </div>
+      <div class="payment">
+       <select name="" id="payment-select">
+        <option value="" selected disabled>Mode of Payment</option>
+        <option value="1">Cash On Delivery</option>
+       </select>
+      </div>
+      <table>
+      <tr class="row">
+      <td>Cart Subtotal</td>
+      <td id="total">0</td>
+      </tr>
+      <tr>
+       <td>Shipping</td>
+       <td>Free</td>
+      </tr>
+      <tr>
+       <td>Total</td>
+       <td id="f-total">0</td>
+      </tr>
+      </table>
+      <div class="total-div-btn">
+      <button onclick="place()">Place Order</button>
+      </div>
+     </div>
+     <!-- Total -->
+     </section>
+    <!-- Cart Section -->
+
+    
+     
+    <script src="script.js"></script>
+</body>
+</html>
