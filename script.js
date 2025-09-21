@@ -266,11 +266,14 @@ document.addEventListener("DOMContentLoaded", (() => {
 
 
 let main_cart = document.querySelector(".cart")
+let animate=document.querySelector(".ilust")
+let summary=document.querySelector(".total-section")
 function show() {
     let cartItems = JSON.parse(localStorage.getItem("cart")) || []
     main_cart.innerHTML = ""
     if (cartItems.length === 0) {
-        main_cart.innerHTML = "<h3>Your cart is empty.</h3>";
+        animate.style.display="block"
+        summary.style.display="none"
         return;
     }
 
@@ -278,7 +281,8 @@ function show() {
     else {
         cartItems.forEach((ele, index) => {
             // console.log(ele)
-
+            animate.style.display="none"
+             summary.style.display="block"
             let main_2div = document.createElement("div")
             let remove_div = document.createElement("div")
             let img_main_div = document.createElement("div")
@@ -289,8 +293,9 @@ function show() {
 
             // Adding Content
             // Remove div
-            let remove_btn = document.createElement("button")
-            remove_btn.textContent = "Remove"
+            let remove_btn = document.createElement("span")
+            remove_btn.classList.add("remove-btn")
+            remove_btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="40px" fill="#1f1f1f"><path d="m332-285.33 148-148 148 148L674.67-332l-148-148 148-148L628-674.67l-148 148-148-148L285.33-628l148 148-148 148L332-285.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>`
             remove_div.append(remove_btn)
 
             // Image div
@@ -299,26 +304,31 @@ function show() {
             img.src = ele.img
             img_div.append(img)
             img_main_div.append(img_div)
+            img_div.classList.add("img-cont")
+            img_main_div.classList.add("img-main")
 
             // Name div
             let name_h3 = document.createElement("h3")
             name_h3.textContent = ele.name
             name_div.append(name_h3)
+            name_div.classList.add("main-name")
 
             // Price div
             let price_p = document.createElement("p")
             price_p.textContent = ele.price
             price_div.append(price_p)
+            price_div.classList.add("price-main")
             calculate()
             // Quantity div
             let qty_input = document.createElement("input")
+            qty_input.classList.add("no-spinner")
             qty_div.append(qty_input)
-
+             qty_div.classList.add("qty-main")
             // Total div
             let total_p = document.createElement("p")
-
             total_p.textContent = "₹ " + ele.total
             total_div.append(total_p)
+            total_div.classList.add("total-main")
 
             // Adding class
             main_2div.classList.add("main_2div")
@@ -339,6 +349,7 @@ function show() {
                     e.textContent = cartItems.length
                 })
                 calculate()
+                show()
             }))
 
             // Input function
@@ -438,9 +449,12 @@ console.log(addr)
 
 
 // Place Order
+let paymentSelect=document.getElementById("payment-select")
+console.log(paymentSelect)
 function place() {
-  
  const selectedAddress = select.value;
+ const payment=paymentSelect.value
+ console.log(payment)
  if (!selectedAddress || selectedAddress === "1") {
         alert("Please select a valid shipping address before placing your order.");
         return; // Stop the function from proceeding
@@ -449,7 +463,11 @@ if(cart.length==0){
     alert("Add some Items to place Order")
     return;
 }
-
+if(payment==""){
+    alert("Select mode of payment")
+    return;
+}
+    show()
     console.log(cart)
     let today=new Date()
 
@@ -475,6 +493,64 @@ if(orders.length>=1){
     myorder.href="orders.html"
     nav.append(myorder)
 }
+
+
+// Contact page
+let errname=document.getElementById("err-name")
+let a=function validateName(){
+    if(name.value!=""){
+      return true
+   }
+}
+
+let errnum=document.getElementById("err-num")
+let b=function validateNum(){
+    if(number.value!=""){
+    return true
+   }
+}
+let c=function validateEmail(){
+    if(gmail.value!="" && gmail.value.includes("@") && gmail.value.includes(".gmail.com")){
+        return true
+    }
+}
+let d=function validateMsg(){
+    if(msg.value!=""){
+        return true
+    }
+}
+
+let name=document.getElementById("form-name")
+let number=document.getElementById("form-number")
+let gmail=document.getElementById("form-email")
+let msg=document.getElementById("form-message")
+let btn=document.getElementById("form-submit-btn")
+let form=document.getElementById("form")
+let notify=document.querySelector(".notify")
+document.addEventListener("DOMContentLoaded",(()=>{
+    if(form){
+form.addEventListener(("submit"),((e)=>{
+     if(a(),b(),c(),d()){
+        e.preventDefault()
+        btn.textContent="Message sending..."
+        name.value=""
+         number.value=""
+        gmail.value=""
+           msg.value=""
+        setTimeout(()=>{
+             btn.textContent="Submit"
+             notify.style.transform="translateX(0px)"
+             setTimeout(()=>{
+                notify.style.transform="translateX(900px)"
+             },4000)
+        },2000)
+     }
+}))
+    }
+}))
+
+
+
 
 
 

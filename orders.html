@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerse</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
          <!-- Nav Bar -->
     <!-- Mobile Nav -->
-     <div class="Nav-bar">
+       <div class="Nav-bar">
      <div class="mob-nav" id="mob-nav">
     <button class="cancel-btn" id="cancel-btn">Cancel</button>
      <nav class="mob-content">
-     <a href="#">Home</a>
-     <a href="#">Shop</a>
-     <a href="#">About</a>
-     <a href="#">Contact</a>
+     <a href="index.html">Home</a>
+     <a href="shop.html">Shop</a>
+     <a href="about.html">About</a>
+     <a href="contact.html">Contact</a>
+     <a href="cart.html" class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> <span class="counter">0</span></a>
      </nav>
      </div>
-      <!-- Mobile Nav -->
-     <div class="nav-bar">
+      <div class="nav-bar">
       <div class="nav-logo">
        <img src="Images/logo.png" alt="">
       </div>
@@ -31,16 +32,16 @@
        <a href="shop.html">Shop
        <div class="line"></div>
        </a>
-       <a href="#">About
+       <a href="about.html">About
          <div class="line"></div>
        </a>
-       <a href="#">Contact
+       <a href="contact.html">Contact
          <div class="line"></div>
        </a>
-       <a href="cart.html" class="cart-btn">Cart <span class="counter">0</span></a>
+       <a href="cart.html" class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i> <span class="counter">0</span></a>
     </nav>
       <div class="menu-div">
-         <a class="cart-btn" href="cart.html">Cart <span class="counter">0</span></a>
+         <a class="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span class="counter">0</span></a>
          <span class="menu-btn" id="menu-btn">Menu</span>
       </div>
      </div>
@@ -50,6 +51,7 @@
     <!-- Orders -->
       <section class="orders-section">
       <h1>My Orders</h1>
+      <div class="orders-line"></div>
       <div class="order-list">
       
       </div>

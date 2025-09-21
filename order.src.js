@@ -40,10 +40,12 @@ let quant_p=document.createElement("p")
 quant_p.textContent="Quantity: "+ele.qty
 quantity_div.append(quant_p)
 
+
 // Total div
 let total_p=document.createElement("p")
 total_p.textContent="₹ "+ele.price
 total_div.append(total_p)
+total_p.classList.add("p")
 
 // Method div
 let method_p=document.createElement("p")
@@ -64,8 +66,7 @@ method_div.append(Payment)
 let add_p=document.createElement("p")
 add_p.textContent=ele.Shipping
 address.append(add_p)
-
-
+add_p.classList.add("p")
 
 // Adding class
 main_2div.classList.add("main_2div")

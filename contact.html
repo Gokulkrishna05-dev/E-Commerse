@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerse</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Nav Bar -->
+    <!-- Mobile Nav -->
+     <div class="Nav-bar">
+     <div class="mob-nav" id="mob-nav">
+    <button class="cancel-btn" id="cancel-btn">Cancel</button>
+     <nav class="mob-content">
+     <a href="index.html">Home</a>
+     <a href="shop.html">Shop</a>
+     <a href="about.html">About</a>
+     <a href="contact.html">Contact</a>
+     <a href="cart.html" class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> <span class="counter">0</span></a>
+     </nav>
+     </div>
+      <div class="nav-bar">
+      <div class="nav-logo">
+       <img src="Images/logo.png" alt="Cara Logo">
+      </div>
+      <nav class="nav-content">
+       <a href="index.html">Home
+        <div class="line"></div>
+       </a>
+       <a href="shop.html">Shop
+       <div class="line"></div>
+       </a>
+       <a href="about.html">About
+         <div class="line"></div>
+       </a>
+       <a href="contact.html">Contact
+         <div class="line"></div>
+       </a>
+       <a class="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="counter">0</span></a>
+    </nav>
+      <div class="menu-div">
+         <a class="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span class="counter">0</span></a>
+         <span class="menu-btn" id="menu-btn">Menu</span>
+      </div>
+     </div>
+     </div>
+     <!-- Nav Bar -->
+
+    <!-- Banner -->
+     <div class="contact-banner"></div>
+    <!-- Banner -->
+
+    <!-- Contact -->
+    <section class="contact-center">
+      <h1 class="contact-head">Contact Us</h1>
+      <div class="contact-line"></div>
+    <div class="contact-main">
+      <div class="contact-mode">
+     <div class="contact-text">
+     <h1>Feel free to reach out!</h1>
+     <p>Whether you have a question, some feedback, or just want to say hello, we'd love to hear from you. Let us know what's on your mind, and our team will get back to you as soon as possible.</p>
+     </div>
+     <div class="icons">
+     <div class="icons-div">
+      <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+      </div>
+      <div class="icon-content">
+        <h2>Mail Address</h2>
+        <p>cara908@gmail.com</p>
+      </div>
+     </div>
+     <div class="icons-div">
+      <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M162-120q-18 0-30-12t-12-30v-162q0-13 9-23.5t23-14.5l138-28q14-2 28.5 2.5T342-374l94 94q38-22 72-48.5t65-57.5q33-32 60.5-66.5T681-524l-97-98q-8-8-11-19t-1-27l26-140q2-13 13-22.5t25-9.5h162q18 0 30 12t12 30q0 125-54.5 247T631-329Q531-229 409-174.5T162-120Zm556-480q17-39 26-79t14-81h-88l-18 94 66 66ZM360-244l-66-66-94 20v88q41-3 81-14t79-28Zm358-356ZM360-244Z"/></svg>
+      </div>
+      <div class="icon-content">
+        <h2>Phone Number</h2>
+        <p>+91 6374014824</p>
+      </div>
+     </div>
+     <div class="icons-div">
+      <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+      </div>
+      <div class="icon-content">
+        <h2>Location</h2>
+        <p>Anna nagar,Chennai 600001</p>
+      </div>
+     </div>
+     </div>
+      </div>
+        <form  class="contact-form" id="form">
+       <h1>Contact Form</h1>
+       <div class="form-input"><input type="text" placeholder="Your name" required id="form-name">
+      </div>
+       <div class="form-input"><input type="number" placeholder="Your contact number" required id="form-number" class="no-spinner">
+      </div>
+       <div class="form-input"><input type="email" placeholder="Your email address" required id="form-email">
+     </div>
+       <div class="textarea"><textarea name="" id="form-message" placeholder="Your message" required ></textarea>
+    </div>
+       <button type="submit" id="form-submit-btn">Submit</button>
+       <div class="notify">
+        <h2>Message sent successfully</h2>
+       </div>
+       </form>
+      </div>
+    </section>
+
+  
+    <!-- Contact -->
+
+     <!--Footer-->
+    <footer>
+     <div class="footer-div">
+      <div class="footer-logo">
+       <div class="logo-cont">
+        <img src="Images/logo.png" alt="">
+       </div>
+       <div class="footer-text">
+       <h1 class="primary">Contact</h1>
+       <p>Address : Xyz Street</p>
+       <p>Phone: +91 6374014824</p>
+       <p>Shop Timing: 9.00 AM to 9.00 PM</p>
+       </div>
+        <h1 class="primary">Follow Us</h1>
+       <div class="footer-icons">
+       <span>Facebook</span>
+       <span>Twitter</span>
+       <span>Instagram</span>
+       </div>
+       </div>
+
+      <div class="footer-content">
+      <div class="footer-about">
+       <h2 class="primary">About</h2>
+       <p>About Us</p>
+       <p>Delivery Information</p>
+       <p>Privacy Policy</p>
+       <p>Terms & Conditions</p>
+       <p>Contact Us</p>
+      </div>
+      <div class="footer-account">
+      <h2 class="primary">My Account</h2>
+      <p>Sign in</p>
+      <p>View Cart</p>
+      <p>My Wishlist</p>
+      <p>Track My Order</p>
+      <p>Help</p>
+      </div>
+      </div>
+     </div>
+
+     <div class="footer-copy">
+      <p>@2025 Cara - HTML CSS JS Ecommerse Webpage</p>
+     </div>
+    </footer>
+    <script src=""></script>
+    <!--Footer-->
+    <script src="script.js" defer></script>
+</body>
+</html>

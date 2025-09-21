@@ -58,11 +58,11 @@ function back() {
 }
 
 // Cart Function
-let btn=document.getElementById("add")
+let btnn=document.getElementById("addd")
 let qty=document.getElementById("input")
 
-btn.addEventListener("click",(()=>{
-     let parent=btn.parentElement.parentElement.parentElement
+btnn.addEventListener("click",(()=>{
+     let parent=btnn.parentElement.parentElement.parentElement
      let img=parent.querySelector(".view-img .main-img-cont img").src
      let name=parent.querySelector(".view-text h1").textContent
      let price=parent.querySelector(".view-text b").textContent
@@ -75,10 +75,14 @@ btn.addEventListener("click",(()=>{
         alert("Item already added in the cart")
      }
      else{
-        if(qty.value==""){
+        if(qty.value=="" ){
             alert("Enter the quantity")
         }
+        else if(qty.value<=0){
+            alert("Enter atleast 1 quantity")
+        }
         else{
+        
         cart.push({name,price,img,total:parseInt(price.replace("₹ ","")*parseInt(qty.value)),input:qty.value})
         localStorage.setItem("cart",JSON.stringify(cart))
         console.log(cart)

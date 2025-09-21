@@ -27,10 +27,10 @@ function save(){
 
    if(Naam() && NUM() && Pin() && ADDR() && CIITY() && ST()) {
    let cont=[]
-   cont.push(addr.value)
-   cont.push(pin.value)
-   cont.push(city.value)
-   cont.push(state.value)
+   cont.push(addr.value+" ")
+   cont.push(pin.value+" ")
+   cont.push(city.value+" ")
+   cont.push(state.value+" ")
    let str=cont.join(",")
    cont.length=0
    cont.push(str)

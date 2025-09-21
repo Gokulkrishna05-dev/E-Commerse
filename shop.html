@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerse</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -13,16 +14,16 @@
     <!-- Mobile Nav -->
      <div class="Nav-bar">
      <div class="mob-nav" id="mob-nav">
-    <button class="cancel-btn" id="cancel-btn">Cancel</button>
+    <span class="cancel-btn" id="cancel-btn"><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
      <nav class="mob-content">
-     <a href="#">Home</a>
-     <a href="#">Shop</a>
-     <a href="#">About</a>
-     <a href="#">Contact</a>
+     <a href="index.html">Home</a>
+     <a href="shop.html">Shop</a>
+     <a href="about.html">About</a>
+     <a href="contact.html">Contact</a>
+     <a href="cart.html" class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> <span class="counter">0</span></a>
      </nav>
      </div>
-      <!-- Mobile Nav -->
-     <div class="nav-bar">
+      <div class="nav-bar">
       <div class="nav-logo">
        <img src="Images/logo.png" alt="">
       </div>
@@ -33,16 +34,16 @@
        <a href="shop.html">Shop
        <div class="line"></div>
        </a>
-       <a href="#">About
+       <a href="about.html">About
          <div class="line"></div>
        </a>
-       <a href="#">Contact
+       <a href="contact.html">Contact
          <div class="line"></div>
        </a>
-       <a class="cart-btn" href="cart.html">Cart<span class="counter">0</span></a>
+       <a class="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="counter">0</span></a>
     </nav>
       <div class="menu-div">
-         <span class="cart-btn">Cart <span class="counter">0</span></span>
+         <a class="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span class="counter">0</span></a>
          <span class="menu-btn" id="menu-btn">Menu</span>
       </div>
      </div>
@@ -73,7 +74,7 @@
                     <p>⭐⭐⭐⭐⭐</p>
                     <p class="txt-price">&#8377 1548</p>
                 </div>
-                <button class="add-btn">Add</button>
+                <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
             </div>
 
             <div class="product">
@@ -86,8 +87,7 @@
                     <p>⭐⭐⭐⭐⭐</p>
                     <p class="txt-price">&#8377 948</p>
                 </div>
-                <button class="add-btn">Add</button>
-            </div>
+<button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>            </div>
 
             <div class="product">
                 <div class="product-img">
@@ -99,7 +99,7 @@
                     <p>⭐⭐⭐⭐</p>
                     <p class="txt-price">&#8377 619</p>
                 </div>
-                <button class="add-btn">Add</button>
+                <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
             </div>
 
             <div class="product">
@@ -112,7 +112,7 @@
                     <p>⭐⭐⭐⭐</p>
                     <p class="txt-price">&#8377 1079</p>
                 </div>
-                <button class="add-btn">Add</button>
+                <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
             </div>
 
             <div class="product">
@@ -125,7 +125,7 @@
                     <p>⭐⭐⭐</p>
                     <p class="txt-price">&#8377 500</p>
                 </div>
-                <button class="add-btn">Add</button>
+                <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
             </div>
 
             <div class="product">
@@ -138,7 +138,7 @@
                     <p>⭐⭐⭐⭐⭐</p>
                     <p class="txt-price">&#8377 800</p>
                 </div>
-                <button class="add-btn">Add</button>
+                <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
             </div>
 
             <div class="product">
@@ -151,7 +151,7 @@
                     <p>⭐⭐⭐</p>
                     <p class="txt-price">&#8377 600</p>
                 </div>
-                <button class="add-btn">Add</button>
+                <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
             </div>
 
             <div class="product">
@@ -164,7 +164,7 @@
                     <p>⭐⭐⭐⭐</p>
                     <p class="txt-price">&#8377 599</p>
                 </div>
-                <button class="add-btn">Add</button>
+                <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
             </div>
 
 
@@ -178,7 +178,7 @@
         <p>⭐⭐⭐⭐⭐</p>
         <p  class="txt-price">&#8377 600</p>
        </div>
-       <button class="add-btn">Add</button>
+       <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
        </div>
 
        <div class="product">
@@ -191,7 +191,7 @@
         <p>⭐⭐⭐⭐⭐</p>
         <p  class="txt-price">&#8377 500</p>
        </div>
-       <button class="add-btn">Add</button>
+      <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
        </div>
 
        <div class="product">
@@ -204,7 +204,7 @@
         <p>⭐⭐⭐⭐⭐</p>
         <p  class="txt-price">₹ 1800</p>
        </div>
-       <button class="add-btn">Add</button>
+      <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
        </div>
 
        <div class="product">
@@ -217,7 +217,7 @@
         <p>⭐⭐⭐⭐⭐</p>
         <p  class="txt-price">₹ 499</p>
        </div>
-       <button class="add-btn">Add</button>
+       <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
        </div>
 
        <div class="product">
@@ -230,7 +230,7 @@
         <p>⭐⭐⭐⭐⭐</p>
         <p  class="txt-price">₹ 1000</p>
        </div>
-       <button class="add-btn">Add</button>
+       <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
        </div>
 
        <div class="product">
@@ -243,7 +243,7 @@
         <p>⭐⭐⭐⭐⭐</p>
         <p  class="txt-price">₹ 800</p>
        </div>
-       <button class="add-btn">Add</button>
+       <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
        </div>
 
        <div class="product">
@@ -256,7 +256,7 @@
         <p>⭐⭐⭐⭐⭐</p>
         <p  class="txt-price">₹ 499</p>
        </div>
-       <button class="add-btn">Add</button>
+       <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
        </div>
 
        <div class="product">
@@ -269,7 +269,7 @@
         <p>⭐⭐⭐⭐⭐</p>
         <p  class="txt-price">₹ 700</p>
        </div>
-       <button class="add-btn">Add</button>
+       <button class="add-btn"><svg xmlns="http://www.w3.org/2000/svg" class="svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></button>
        </div>
         </div>
     </section>
