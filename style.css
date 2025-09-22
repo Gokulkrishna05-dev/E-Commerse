@@ -643,7 +643,23 @@ footer{
     margin-top: 10px;
 }
 .footer-icons{
-    margin-top: 10px;
+    display: flex;
+    position: relative;
+    top: 35px;
+    column-gap: 10px;
+    transition: all 1.5s;
+}
+.fa-facebook:hover{
+    color: skyblue;
+    transform: scale(1.2);
+}
+.fa-twitter:hover{
+    color: skyblue;
+    transform: scale(1.2);
+}
+.fa-instagram:hover{
+    color: pink;
+    transform: scale(1.2);
 }
 .footer-div{
     max-width: 90%;
@@ -677,6 +693,26 @@ footer{
     margin-top: 30px;
     padding-bottom: 30px;
 }
+.about-link{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.quick-links{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.about-link a,.quick-links a{
+    color: white;
+    cursor: pointer;
+}
+.about-link a:hover,.quick-links a:hover{
+    color: grey;
+}
+
 
 /* Media */
 @media screen and (max-width:600px){
@@ -754,9 +790,9 @@ footer{
     height: 5px;
     width: 50px;
     background-color: #088178;
-    margin: 0 auto;
     margin-top: 7px;
     border-radius: 50px;
+    margin-left:5px;
 }
 .orders-line{
     height: 5px;
@@ -781,7 +817,7 @@ footer{
     margin: 0 auto;
     padding-top: 100px;
     min-height: 80vh;
-    display: grid;
+    /* display: grid; */
     overflow: auto;
     overflow-x: auto;
 }
@@ -790,7 +826,7 @@ footer{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     
 }
 .cart-img-cont{
@@ -971,8 +1007,8 @@ table tr:last-child {
     flex-direction: column;
     row-gap: 10px;
     max-width: 300px;
-    margin-top: 70px;
-    margin-left: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 input{
     padding: 10px;
@@ -1311,6 +1347,13 @@ input{
     .contact-mode{
     min-width: 100%;
 }
+.icons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 100%;
+}
 .contact-form{
     /* flex: 1; */
     /* background-color: #088178; */
@@ -1396,3 +1439,39 @@ input,textarea{
     width: 500px;
 }
 /* Contact Section */
+
+/* Privacy policy */
+.terms-center{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.terms-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.terms-content h3{
+    color: #088178;
+}
+.term-1 p,.term-2 p,.term-3 p,.term-4 p{
+   margin-top: 10px;
+}
+.term-2 ul li,.term-3 ul li{
+    margin-top: 10px;
+    
+}
+
+.terms2 h3{
+   margin-top: 20px;
+   color: #088178;
+}
+.terms2 p{
+    margin-top: 10px;
+}
+
+/* Help */
+.help h3{
+    color: #088178;
+    margin-top: 30px;
+}

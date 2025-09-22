@@ -11,11 +11,12 @@ let des_dom = document.getElementById("des")
 let select_size=document.getElementById("select_size")
 
 let selectedProduct=JSON.parse(localStorage.getItem("selectedProduct"))
-
+console.log(selectedProduct)
+console.log(selectedProduct)
 if (selectedProduct) {
     name_dom.textContent = selectedProduct.name
     price_dom.textContent = selectedProduct.price
-    brand_dom.textContent = selectedProduct.brand || "Brand Not Available"
+    brand_dom.textContent = selectedProduct.brand
     main_img.src = selectedProduct.main
     
     sb1.src = selectedProduct.sd1

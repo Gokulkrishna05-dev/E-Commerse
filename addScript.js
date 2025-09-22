@@ -107,5 +107,17 @@ if(state.value==""){
    }
 }
 
+// Navbar
+let cancel = document.getElementById("cancel-btn")
+let menu = document.getElementById("menu-btn")
+let mob_nav = document.getElementById("mob-nav")
+menu.addEventListener("click", (() => {
+    mob_nav.style.transform = "translateX(0px)"
+}))
+cancel.addEventListener("click", (() => {
+    mob_nav.style.transform = "translateX(500px)"
+}))
+// Navbar
+
 
 

@@ -15,6 +15,7 @@ cancel.addEventListener("click", (() => {
 let products_arr = [
     {
         name: "Men Solid Casual Grey Shirt",
+        brand:"Flying Machine",
         price: "₹ 1548",
         main: `Fp images/Shirt-1 (1).jpg`,
         sd1: "Fp images/Shirt-1 (1).jpg",
@@ -25,6 +26,7 @@ let products_arr = [
     },
     {
         name: "Men Checkered Casual Green,Beige Shirt",
+        brand:"Bear House",
         price: "₹ 948",
         main: "Fp images/Shirt-2 (1).jpg",
         sd1: "Fp images/Shirt-2 (1).jpg",
@@ -35,6 +37,7 @@ let products_arr = [
     },
     {
         name: "Men Solid Party Grey Shirt",
+        brand:"Roadster",
         price: "₹ 619",
         main: "Fp images/shirt-3 (1).jpg",
         sd1: "Fp images/shirt-3 (1).jpg",
@@ -45,6 +48,7 @@ let products_arr = [
     },
     {
         name: "Boys Solid Casual Green Shirt",
+        brand:"Highlander",
         price: "₹ 1079",
         main: "Fp images/shirt-4 (1).jpg",
         sd1: "Fp images/shirt-4 (1).jpg",
@@ -55,6 +59,7 @@ let products_arr = [
     },
     {
         name: "Men Regular Fit Solid Spread Collar Casual Shirt",
+        brand:"JACK & JONES",
         price: "₹ 500",
         main: "Fp images/shirt-5 (1).jpg",
         sd1: "Fp images/shirt-5 (1).jpg",
@@ -65,6 +70,7 @@ let products_arr = [
     },
     {
         name: "Solid Casual Beige Shirt",
+         brand:"H&M",
         price: "₹ 800",
         main: "Fp images/shirt-7 (1).jpg",
         sd1: "Fp images/shirt-7 (1).jpg",
@@ -75,6 +81,7 @@ let products_arr = [
     },
     {
         name: "Men Self Design Casual Grey Shirt",
+         brand:"Hubberholme",
         price: "₹ 600",
         main: "Fp images/shirt-8 (1).jpg",
         sd1: "Fp images/shirt-8 (1).jpg",
@@ -85,6 +92,7 @@ let products_arr = [
     },
     {
         name: "Regular Fit Men Brown Trousers",
+         brand:"Maniac",
         price: "₹ 599",
         main: "Fp images/phant-6 (1).jpg",
         sd1: "Fp images/phant-6 (1).jpg",
@@ -95,6 +103,7 @@ let products_arr = [
     },
     {
         name: "Baggy jeans",
+           brand:"Wrogn",
         price: "₹ 600",
         main: "Fp images/phant-9 (1).jpg",
         sd1: "Fp images/phant-9 (1).jpg",
@@ -105,6 +114,7 @@ let products_arr = [
     },
     {
         name: "Polo T-shirt",
+           brand:"U.S. Polo Assn.",
         price: "₹ 500",
         main: "Fp images/shirt-10 (1).jpg",
         sd1: "Fp images/shirt-10 (1).jpg",
@@ -115,6 +125,7 @@ let products_arr = [
     },
     {
         name: "Striped Linen Shirt",
+         brand:"Marks & Spencer",
         price: "₹ 1800",
         main: "Fp images/shirt-11 (1).jpg",
         sd1: "Fp images/shirt-11 (1).jpg",
@@ -125,6 +136,7 @@ let products_arr = [
     },
     {
         name: "Striped Cotton Shirt",
+          brand:"Peter England",
         price: "₹ 499",
         main: "Fp images/shirt-12 (1).jpg",
         sd1: "Fp images/shirt-12 (1).jpg",
@@ -135,6 +147,7 @@ let products_arr = [
     },
     {
         name: "Baggy Jeans",
+          brand:"Roadster",
         price: "₹ 1000",
         main: "Fp images/phant-13 (1).jpg",
         sd1: "Fp images/phant-13 (1).jpg",
@@ -145,6 +158,7 @@ let products_arr = [
     },
     {
         name: "White Oversized Shirt",
+        brand:"Here & Now",
         price: "₹ 800",
         main: "Fp images/shirt-14 (1).jpg",
         sd1: "Fp images/shirt-14 (1).jpg",
@@ -155,6 +169,7 @@ let products_arr = [
     },
     {
         name: "Slim Fit Trousers",
+         brand:"Louis Philippe",
         price: "₹ 499",
         main: "Fp images/phant-15 (1).jpg",
         sd1: "Fp images/phant-15 (1).jpg",
@@ -165,6 +180,7 @@ let products_arr = [
     },
     {
         name: "Ramraj Dhoti",
+         brand:"Ramraj",
         price: "₹ 700",
         main: "Fp images/vesti-16 (1).jpg",
         sd1: "Fp images/vesti-16 (1).jpg",
@@ -183,12 +199,14 @@ let f_total = document.getElementById("f-total")
 let cart = JSON.parse(localStorage.getItem("cart")) || []
 let counter = document.querySelectorAll(".counter")
 let add = document.querySelectorAll(".add-btn")
+
 add.forEach((e) => {
     e.addEventListener("click", (() => {
         let Product = e.parentElement
         let img = Product.querySelector(".product-img img").src
         let name = Product.querySelector(".txt-head").textContent
         let price = Product.querySelector(".txt-price").textContent
+        let brand=Product.querySelector(".txt-p").textContent
         let check = cart.some((element) => {
             return element.name == name, element.price == price
         })
@@ -196,7 +214,7 @@ add.forEach((e) => {
             alert("Item already added into the cart")
         }
         else {
-            cart.push({ name, price, img, total: parseInt(price.replace("₹ ", "")), input: 1 })
+            cart.push({ name, price, img, total: parseInt(price.replace("₹ ", "")), input: 1,brand })
             console.log(cart)
             localStorage.setItem("cart", JSON.stringify(cart))
             lenshow()
@@ -229,10 +247,10 @@ img.forEach((e) => {
         // Get product Details
         let price = e.parentElement.parentElement.querySelectorAll("p")[2].textContent
         let name = e.parentElement.parentElement.querySelector("h4").textContent
-
+        let brand=e.parentElement.parentElement.querySelector("p").textContent
         // Finding the matching products in the array
         let product = products_arr.find((item) => {
-            return item.name == name && item.price == price
+            return item.name == name && item.price == price && brand
         })
 
 
