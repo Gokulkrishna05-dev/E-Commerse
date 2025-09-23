@@ -1,3 +1,5 @@
+// Preloader logic
+
 // Navbar
 let cancel = document.getElementById("cancel-btn")
 let menu = document.getElementById("menu-btn")
@@ -286,7 +288,10 @@ window.onload = function toshow() {
     const container = document.querySelector(".cart")
     if (container) {
         show()
-       
+    }
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        preloader.classList.add('hidden');
     }
 }
 
