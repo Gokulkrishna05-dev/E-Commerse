@@ -31,6 +31,7 @@ body {
     min-height: 100dvh;
     background-color: var(--off-white);
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 html{
     overflow-x: hidden;
@@ -40,8 +41,10 @@ a{
     text-decoration: none;
     color: black;
 }
-
 h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Bolder headings */
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-weight: 700; /* Bolder headings */
 }
 
@@ -322,12 +325,13 @@ button {
 .home-content h1{
     font-size: 3rem;
     overflow-wrap: anywhere;
+    color: #088178;
 }
 .h2{
     color: var(--primary-color);
 }
 .shop-btn{
-    padding: 10px;
+    padding: 13px;
     border-radius: 50px;
     border: solid 2px var(--primary-color);
     max-width: 120px;
@@ -335,6 +339,9 @@ button {
     text-align: center;
     font-size: 1.2rem;
     cursor: pointer;
+    max-width: 150px;
+    margin-top: 5px;
+   
 }
 .home-content p{
     color: white;
