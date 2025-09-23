@@ -284,15 +284,19 @@ img.forEach((e) => {
 
 // localStorage.clear()
 
+let main=document.getElementById("main")
+
 window.onload = function toshow() {
     const container = document.querySelector(".cart")
     if (container) {
         show()
     }
     const preloader = document.getElementById('preloader');
+    main.style.visibility="hidden"
     if (preloader) {
-        preloader.classList.add('hidden');
-    }
+         preloader.classList.add('hidden');
+           main.style.visibility="visible"
+     }
 }
 
 // Checking...
