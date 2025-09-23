@@ -335,13 +335,13 @@ button {
     border-radius: 50px;
     border: solid 2px var(--primary-color);
     max-width: 120px;
-    color: var(--primary-color);
     text-align: center;
     font-size: 1.2rem;
     cursor: pointer;
     max-width: 150px;
     margin-top: 5px;
-   
+    color: white;
+    font-weight: bold;
 }
 .home-content p{
     color: white;
@@ -384,6 +384,12 @@ button {
     margin-top: 50px;
 }
 
+}
+@media screen and (max-width:380px){
+    .center-home{
+        background-position-y: top;
+        background-position-x: center;
+    }
 }
 /* Media */
 /* Home */
