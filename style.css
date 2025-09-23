@@ -298,14 +298,12 @@ button {
 
 /* Home */
 .center-home{
-    background-image: url(Images/hero_bg.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(Images/pexels-umutsrln-20548496.jpg);
+    background-size:cover;
+    background-position-y: 25%;
     height: 110vh;
     padding-top: 120px;
     z-index: 99;
-    background-position-y: top;
-    
 }
 .home-content{
     height: 80%;
@@ -319,7 +317,7 @@ button {
     margin-top: 50px;
 }
 .home-content b{
-    color: var(--text-color);
+    color: white;
 }
 .home-content h1{
     font-size: 3rem;
@@ -339,11 +337,11 @@ button {
     cursor: pointer;
 }
 .home-content p{
-    color: #465b52;
+    color: white;
 }
 
 /* Media */
-@media screen and (max-width:900px){
+/* @media screen and (max-width:900px){
     .center-home{
         background-position: 70%;
     }
@@ -361,6 +359,24 @@ button {
         background-position: 70%;
     }
     
+} */
+
+@media screen and (max-width:520px){
+    .center-home{
+        background-position-y: top;
+    }
+    .home-content{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 10px;
+    row-gap: 10px;
+    /* background-color: #088178; */
+    margin-top: 50px;
+}
+
 }
 /* Media */
 /* Home */
