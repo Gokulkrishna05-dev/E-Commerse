@@ -41,7 +41,7 @@ let products_arr = [
         des: "This is a classic and comfortable shirt for boys from GAP. It features a simple, solid beige color, making it a versatile piece for a casual wardrobe. The shirt is designed for comfort and durability for everyday wear."
     },
     {
-        name: "Men Checkered Casual Green,Beige Shirt",
+        name: "Men Slim Fit Striped Spread Collar Formal Shirt",
         brand:"Bear House",
         price: "₹ 948",
         main: "Fp images/Shirt-2 (1).jpg",

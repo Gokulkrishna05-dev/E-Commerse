@@ -816,8 +816,6 @@ footer{
     max-width: 90%;
     margin: 0 auto;
     padding-top: 100px;
-    min-height: 80vh;
-    /* display: grid; */
 }
 .cart{
     min-width: 900px;
@@ -825,13 +823,11 @@ footer{
     flex-direction: column;
     row-gap: 10px;
     margin-top: 40px;
-   
 }
 .cart-img-cont{
     max-width: 100px;
     height: 100px;
     border-radius: 4px;
-   
 }
 .cart-img-cont img {
     object-fit: cover;
@@ -896,6 +892,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 .remove-btn svg{
    fill: red;

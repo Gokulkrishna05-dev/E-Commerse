@@ -8,6 +8,7 @@ let state=document.getElementById("state")
 // Dom element
 let NAME=document.querySelector(".NAME")
 let NUMBER=document.querySelector(".NUMBER")
+let NUMBER2=document.querySelector(".NUMBER2")
 let ADDRESS=document.querySelector(".ADDRESS")
 let PINCODE=document.querySelector(".PINCODE")
 let CITY=document.querySelector(".CITY")
@@ -53,12 +54,18 @@ let Naam=function nameValidate(){
 }
 
 let NUM=function numValidate(){
-    if(num.value=="" || num.value.length!=10){
+    if(num.value==""){
      NUMBER.style.display="block"
      return false
    }
+   else if(num.value.length!=10){
+     NUMBER2.style.display="block"
+      NUMBER.style.display="none"
+   }
+   
    else{
       NUMBER.style.display="none"
+      NUMBER2.style.display="none"
       return true
    }
 }
