@@ -10,6 +10,22 @@ cancel.addEventListener("click", (() => {
 }))
 // Navbar
 
+function load(){
+    return new Promise((res)=>{
+        let img=document.images;
+        let count=0;
+        if(img.length==0){
+            res()
+        }
+    })
+}
+console.log(document.images)
+load().then((e)=>{
+    console.log(e)
+})
+.catch((e)=>{
+    console.log(e)
+})
 
 // Products Array
 let products_arr = [
@@ -230,6 +246,8 @@ function lenshow() {
     })
 }
 
+let cartsection=document.querySelector(".cart-section")
+
 
 // localStorage.clear()
 
@@ -268,6 +286,7 @@ window.onload = function toshow() {
     const container = document.querySelector(".cart")
     if (container) {
         show()
+       
     }
 }
 
@@ -292,6 +311,7 @@ function show() {
     if (cartItems.length === 0) {
         animate.style.display="block"
         summary.style.display="none"
+        cartsection.style.overflow="hidden"
         return;
     }
 
@@ -301,6 +321,7 @@ function show() {
             // console.log(ele)
             animate.style.display="none"
              summary.style.display="block"
+             cartsection.style.overflow="auto"
             let main_2div = document.createElement("div")
             let remove_div = document.createElement("div")
             let img_main_div = document.createElement("div")

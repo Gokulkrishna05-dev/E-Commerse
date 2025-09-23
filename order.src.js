@@ -4,12 +4,12 @@ let orders_src=document.querySelector(".order-list")
 console.log(arr)
 let dt=new Date()
 
-
+let ord=document.querySelector(".ord")
 
 
 if(arr.length>=1){
 
-
+   ord.style.display="none"
     orders_src.innerHTML=""
     arr.forEach((ele,i)=>{
     
@@ -85,6 +85,9 @@ orders_src.append(main_2div)
 
 
     })
+}
+else{
+  ord.style.display="block"
 }
 
 

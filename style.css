@@ -818,8 +818,6 @@ footer{
     padding-top: 100px;
     min-height: 80vh;
     /* display: grid; */
-    overflow: auto;
-    overflow-x: auto;
 }
 .cart{
     min-width: 900px;
@@ -827,7 +825,7 @@ footer{
     flex-direction: column;
     row-gap: 10px;
     margin-top: 40px;
-    
+   
 }
 .cart-img-cont{
     max-width: 100px;
@@ -848,7 +846,6 @@ footer{
     justify-content: space-between;
     align-items: center;
     row-gap: 10px;
- 
     text-align: center;
 }
 .remove-btn-cont{
@@ -1431,12 +1428,20 @@ input,textarea{
     color: var(--secondary-color);
 }
 .ilust{
+    overflow: hidden;
     margin-top: 20px;
     text-align: center;
     color: var(--secondary-color);
 }
 .animated{
-    width: 500px;
+    min-width: 290px;
+    margin-top: 30px;
+}
+@media screen and (max-width:322px){
+    .animated{
+    min-width: 100%;
+    margin-top: 30px;
+}
 }
 /* Contact Section */
 
@@ -1474,4 +1479,10 @@ input,textarea{
 .help h3{
     color: #088178;
     margin-top: 30px;
+}
+
+.ord{
+    max-width: 400px;
+    margin: 0 auto;
+   margin-top: 10px;
 }
