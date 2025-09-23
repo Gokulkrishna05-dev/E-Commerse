@@ -54,6 +54,14 @@ img {
 button {
     cursor: pointer;
 }
+.allbtn{
+    transition: all 0.5s;
+}
+.allbtn:hover{
+    background-color: #088178;
+    color: white;
+    
+}
 /* select{
     appearance: none;
 } */
