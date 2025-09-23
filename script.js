@@ -292,10 +292,8 @@ window.onload = function toshow() {
         show()
     }
     const preloader = document.getElementById('preloader');
-    main.style.visibility="hidden"
     if (preloader) {
          preloader.classList.add('hidden');
-           main.style.visibility="visible"
      }
 }
 
