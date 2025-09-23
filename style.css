@@ -303,6 +303,7 @@ button {
 .center-home{
     background-image: url(Images/pexels-umutsrln-20548496.jpg);
     background-size:cover;
+    background-position-x: left;
     background-position-y: 25%;
     height: 110vh;
     padding-top: 120px;
@@ -371,7 +372,7 @@ button {
 @media screen and (max-width:520px){
     .center-home{
         background-position-y: top;
-         background-position-x: center;
+        background-position: 40%;
     }
     .home-content{
     height: 80%;
@@ -389,7 +390,8 @@ button {
 @media screen and (max-width:380px){
     .center-home{
         background-position-y: top;
-        background-position-x: center;
+        background-position: 40%;
+
     }
 }
 /* Media */
