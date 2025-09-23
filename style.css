@@ -371,6 +371,7 @@ button {
 @media screen and (max-width:520px){
     .center-home{
         background-position-y: top;
+         background-position-x: center;
     }
     .home-content{
     height: 80%;
